@@ -12,6 +12,8 @@ const tutorials = [
 ];
 
 const titleCased = () => {
+  return tutorials.map(capitlized);
+
   capitlized =(tutorial) => {
      tutorial = tutorial.split(' ');
      for (let i = 0; i < tutorial.length; i++) {
@@ -19,5 +21,4 @@ const titleCased = () => {
      }
      return tutorial.join(' ');
    }
-   return tutorials.map(capitlized);
 }
