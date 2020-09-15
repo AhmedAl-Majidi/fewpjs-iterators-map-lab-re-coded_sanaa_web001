@@ -14,7 +14,7 @@ const tutorials = [
 const titleCased = () => {
   return tutorials.map(capitlized);
 
-  let capitlized = (tutorial) => {
+  let capitlized = function(tutorial) {
      tutorial = tutorial.split(' ');
      for (let i = 0; i < tutorial.length; i++) {
        tutorial[i] = tutorial[i].charAt(0).toUpperCase() + tutorial[i].slice(1).toLowerCase();
